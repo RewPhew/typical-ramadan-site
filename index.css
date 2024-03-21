@@ -1,9 +1,8 @@
 :root{
-    --background-color: #1E2124;
-    --primary-color: #424549;
-    --accent-color: #428acf;
-
-    --text-color: #edf1f5;
+    --text-color: #e3e5f3;
+    --background-color: rgb(14, 18, 42);
+    --primary-color: #26307a;
+    --accent-color: #5f6dd3;
 
     --border-radius: 8px;
 }
@@ -44,7 +43,7 @@ body{
 #logo-text{
     font-size: 100px;
     color: var(--accent-color);
-    background: -webkit-linear-gradient(#95b6d5, #428acf); 
+    background: -webkit-linear-gradient(#95b6f1, #428acf); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
@@ -78,9 +77,16 @@ body{
     justify-content: center;
     align-items: center;
     padding: 8px;
+    
+
+    border: 5px solid var(--accent-color);
+    font-weight: 500;
+    font-size: 30px;
+    box-shadow: 0px 5px 0px rgba(95, 109, 211, .5);
+    text-shadow: 0px 5px 5px rgba(95, 109, 211, .5);
+    margin-top: 20px;
+    color: var(--secondary);
     cursor: pointer;
-    border: 2px solid #70A5C2;
-    box-shadow: 0px 5px 0px #70a5c2;
 }
 .lol:active{
     box-shadow: none;
@@ -91,6 +97,7 @@ body{
     text-align: center;
     padding: 2vw;
     position: relative;
+    
 }
 .info-main{
     width: 100%;
@@ -101,6 +108,9 @@ body{
     background: -webkit-linear-gradient(#95b6d5, #428acf); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    border-radius: var(--border-radius);
+    
+    
 }
 .cover{
     background-color: var(--primary-color);

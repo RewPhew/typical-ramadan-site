@@ -73,6 +73,8 @@ function populateTable() {
         const iftariTime = parseTime(todayData.iftar);
         const sehriTime = parseTime(todayData.sehri);
 
+        
+
         if (currentHour < sehriTime.hours || (currentHour === sehriTime.hours && currentMinute < sehriTime.minutes)) {
         } else if (currentHour >= iftariTime.hours || (currentHour === iftariTime.hours && currentMinute >= iftariTime.minutes)) {
             const nextIftariDate = new Date(currentDate);
@@ -82,6 +84,9 @@ function populateTable() {
             const iftariDate = new Date(currentDate);
             iftariDate.setHours(iftariTime.hours, iftariTime.minutes, 0, 0);
         }
+
+        console.log(iftariTime.hours)
+        console.log(iftariTime.minutes)
     }
 }
 
@@ -103,3 +108,41 @@ const viewBtn = document.getElementById('seeFulls');
                 isRamadanTableVisible = false;
             }
 });
+
+
+if ("Notification" in window) {
+    if (Notification.permission === "granted") {
+        notify();
+    } else {
+        Notification.requestPermission().then(res => {
+            if (res === "granted") {
+                notify();
+            } else {
+                console.error("Did not receive permission for notifications");
+            }
+        });
+    }
+} else {
+    console.error("Browser does not support notifications");
+}
+
+// Define the notify function
+function notify(time) {
+    const notification = new Notification(`Iftari at: ${time}`, {
+        body: "It's time to break your fast!",
+        icon: 'https://typical-ramadan-site.vercel.app/assets/logo.svg',
+        vibration: [300, 200, 300],
+    });
+}
+
+// Call notify function with iftari time
+if (iftari) {
+    const iftariTime = parseTime(iftari.textContent);
+    const currentDate = new Date();
+    const currentHour = currentDate.getHours();
+    const currentMinute = currentDate.getMinutes();
+    
+    if (currentHour === iftariTime.hours && currentMinute === iftariTime.minutes) {
+        notify(iftari.textContent);
+    }
+}

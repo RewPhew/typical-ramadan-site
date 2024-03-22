@@ -1,9 +1,7 @@
 :root{
     --text-color: #e3e5f3;
-    --background-color: rgb(14, 18, 42);
-    --primary-color: #26307a;
-    --accent-color: #5f6dd3;
-
+    --background-color: #0E122A;
+    --primary-color: #26307A;
     --border-radius: 8px;
 }
 
@@ -66,6 +64,7 @@ body{
     font-size: 32px;
     cursor: pointer;
 }
+
 .lol{
     background-color: var(--primary-color);
     border-radius: var(--border-radius);
@@ -77,26 +76,16 @@ body{
     justify-content: center;
     align-items: center;
     padding: 8px;
-    
-
-    border: 5px solid var(--accent-color);
-    font-weight: 500;
-    font-size: 30px;
-    box-shadow: 0px 5px 0px rgba(95, 109, 211, .5);
-    text-shadow: 0px 5px 5px rgba(95, 109, 211, .5);
-    margin-top: 20px;
-    color: var(--secondary);
     cursor: pointer;
-}
-.lol:active{
-    box-shadow: none;
-    transform: translateY(5px);
+    gap: 2vw;
+    z-index: 5;
 }
 .info-containers{
     width: 50%;
     text-align: center;
     padding: 2vw;
     position: relative;
+    
     
 }
 .info-main{
@@ -109,7 +98,7 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     border-radius: var(--border-radius);
-    
+    text-shadow: 0px 0px 5px rgba(95, 109, 211, .5);
     
 }
 .cover{
@@ -145,6 +134,16 @@ table{
     text-align: left;
     padding: 2vw;
     margin-bottom: 64px;
+}
+.shadow{
+    content: '';
+    height: 120px;
+    width: 100vw;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+    pointer-events: none;
+    position: fixed;
+    bottom: 0;
+    
 }
 th{
     

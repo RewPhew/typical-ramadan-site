@@ -1,34 +1,34 @@
 const ramadanData = [
-    { date: '12M', ramazan: '01', iftar: '06:06 PM', sehri: '04:43 AM', day:'Mon' },
-    { date: '13M', ramazan: '02', iftar: '06:07 PM', sehri: '04:42 AM', day:'Tue' },
-    { date: '14M', ramazan: '03', iftar: '06:07 PM', sehri: '04:41 AM', day:'Wed' },
-    { date: '15M', ramazan: '04', iftar: '06:08 PM', sehri: '04:40 AM', day:'Thu' },
-    { date: '16M', ramazan: '05', iftar: '06:08 PM', sehri: '04:39 AM', day:'Fri' },
-    { date: '17M', ramazan: '06', iftar: '06:09 PM', sehri: '04:38 AM', day:'Sat' },
-    { date: '18M', ramazan: '07', iftar: '06:10 PM', sehri: '04:37 AM', day:'Sun' },
-    { date: '19M', ramazan: '08', iftar: '06:11 PM', sehri: '04:36 AM', day:'Mon' },
-    { date: '20M', ramazan: '09', iftar: '06:11 PM', sehri: '04:34 AM', day:'Tue' },
-    { date: '21M', ramazan: '10', iftar: '06:12 PM', sehri: '04:33 AM', day:'Wed' },
-    { date: '22M', ramazan: '11', iftar: '06:12 PM', sehri: '04:32 AM', day:'Thu' },
-    { date: '23M', ramazan: '12', iftar: '06:13 PM', sehri: '04:30 AM', day:'Fri' },
-    { date: '24M', ramazan: '13', iftar: '06:14 PM', sehri: '04:29 AM', day:'Sat' },
-    { date: '25M', ramazan: '14', iftar: '06:14 PM', sehri: '04:28 AM', day:'Sun' },
-    { date: '26M', ramazan: '15', iftar: '06:15 PM', sehri: '04:27 AM', day:'Mon' },
-    { date: '27M', ramazan: '16', iftar: '06:15 PM', sehri: '04:25 AM', day:'Tue' },
-    { date: '28M', ramazan: '17', iftar: '06:16 PM', sehri: '04:24 AM', day:'Thu' },
-    { date: '29M', ramazan: '18', iftar: '06:16 PM', sehri: '04:23 AM', day:'Fri' },
-    { date: '30M', ramazan: '19', iftar: '06:17 PM', sehri: '04:22 AM', day:'Sat' },
-    { date: '31M', ramazan: '20', iftar: '06:17 PM', sehri: '04:21 AM', day:'Sun' },
-    { date: '01A', ramazan: '21', iftar: '06:18 PM', sehri: '04:20 AM', day:'Mon' },
-    { date: '02A', ramazan: '22', iftar: '06:19 PM', sehri: '04:19 AM', day:'Tue' },
-    { date: '03A', ramazan: '23', iftar: '06:19 PM', sehri: '04:18 AM', day:'Wed' },
-    { date: '04A', ramazan: '24', iftar: '06:20 PM', sehri: '04:17 AM', day:'Thu' },
-    { date: '05A', ramazan: '25', iftar: '06:20 PM', sehri: '04:15 AM', day:'Fri' },
-    { date: '06A', ramazan: '26', iftar: '06:21 PM', sehri: '04:14 AM', day:'Sat' },
-    { date: '07A', ramazan: '27', iftar: '06:21 PM', sehri: '04:13 AM', day:'Sun' },
-    { date: '08A', ramazan: '28', iftar: '06:22 PM', sehri: '04:12 AM', day:'Mon' },
-    { date: '09A', ramazan: '29', iftar: '06:22 PM', sehri: '04:11 AM', day:'Tue' },
-    { date: '10A', ramazan: '30', iftar: '06:23 PM', sehri: '04:10 AM', day:'Wed' },
+    { date: '12M', ramazan: '01', iftar: '06:06', sehri: '04:43', day:'Mon' },
+    { date: '13M', ramazan: '02', iftar: '06:07', sehri: '04:42', day:'Tue' },
+    { date: '14M', ramazan: '03', iftar: '06:07', sehri: '04:41', day:'Wed' },
+    { date: '15M', ramazan: '04', iftar: '06:08', sehri: '04:40', day:'Thu' },
+    { date: '16M', ramazan: '05', iftar: '06:08', sehri: '04:39', day:'Fri' },
+    { date: '17M', ramazan: '06', iftar: '06:09', sehri: '04:38', day:'Sat' },
+    { date: '18M', ramazan: '07', iftar: '06:10', sehri: '04:37', day:'Sun' },
+    { date: '19M', ramazan: '08', iftar: '06:11', sehri: '04:36', day:'Mon' },
+    { date: '20M', ramazan: '09', iftar: '06:11', sehri: '04:34', day:'Tue' },
+    { date: '21M', ramazan: '10', iftar: '06:12', sehri: '04:33', day:'Wed' },
+    { date: '22M', ramazan: '11', iftar: '06:12', sehri: '04:32', day:'Thu' },
+    { date: '23M', ramazan: '12', iftar: '06:13', sehri: '04:30', day:'Fri' },
+    { date: '24M', ramazan: '13', iftar: '06:14', sehri: '04:29', day:'Sat' },
+    { date: '25M', ramazan: '14', iftar: '06:14', sehri: '04:28', day:'Sun' },
+    { date: '26M', ramazan: '15', iftar: '06:15', sehri: '04:27', day:'Mon' },
+    { date: '27M', ramazan: '16', iftar: '06:15', sehri: '04:25', day:'Tue' },
+    { date: '28M', ramazan: '17', iftar: '06:16', sehri: '04:24', day:'Thu' },
+    { date: '29M', ramazan: '18', iftar: '06:16', sehri: '04:23', day:'Fri' },
+    { date: '30M', ramazan: '19', iftar: '06:17', sehri: '04:22', day:'Sat' },
+    { date: '31M', ramazan: '20', iftar: '06:17', sehri: '04:21', day:'Sun' },
+    { date: '01A', ramazan: '21', iftar: '06:18', sehri: '04:20', day:'Mon' },
+    { date: '02A', ramazan: '22', iftar: '06:19', sehri: '04:19', day:'Tue' },
+    { date: '03A', ramazan: '23', iftar: '06:19', sehri: '04:18', day:'Wed' },
+    { date: '04A', ramazan: '24', iftar: '06:20', sehri: '04:17', day:'Thu' },
+    { date: '05A', ramazan: '25', iftar: '06:20', sehri: '04:15', day:'Fri' },
+    { date: '06A', ramazan: '26', iftar: '06:21', sehri: '04:14', day:'Sat' },
+    { date: '07A', ramazan: '27', iftar: '06:21', sehri: '04:13', day:'Sun' },
+    { date: '08A', ramazan: '28', iftar: '06:22', sehri: '04:12', day:'Mon' },
+    { date: '09A', ramazan: '29', iftar: '06:22', sehri: '04:11', day:'Tue' },
+    { date: '10A', ramazan: '30', iftar: '06:23', sehri: '04:10', day:'Wed' },
 ];
 const iftari = document.getElementById('iftari');
 const sehri = document.getElementById('sehri');
@@ -108,41 +108,3 @@ const viewBtn = document.getElementById('seeFulls');
                 isRamadanTableVisible = false;
             }
 });
-
-
-if ("Notification" in window) {
-    if (Notification.permission === "granted") {
-        notify();
-    } else {
-        Notification.requestPermission().then(res => {
-            if (res === "granted") {
-                notify();
-            } else {
-                console.error("Did not receive permission for notifications");
-            }
-        });
-    }
-} else {
-    console.error("Browser does not support notifications");
-}
-
-// Define the notify function
-function notify(time) {
-    const notification = new Notification(`Iftari at: ${time}`, {
-        body: "It's time to break your fast!",
-        icon: 'https://typical-ramadan-site.vercel.app/assets/logo.svg',
-        vibration: [300, 200, 300],
-    });
-}
-
-// Call notify function with iftari time
-if (iftari) {
-    const iftariTime = parseTime(iftari.textContent);
-    const currentDate = new Date();
-    const currentHour = currentDate.getHours();
-    const currentMinute = currentDate.getMinutes();
-    
-    if (currentHour === iftariTime.hours && currentMinute === iftariTime.minutes) {
-        notify(iftari.textContent);
-    }
-}

@@ -2,7 +2,7 @@
     "name": "Rime",
     "short_name": "Rime",
     "display": "standalone",
-    "background_color": "#1E2124",
+    "background_color": "#0E122A",
     "description": "Ramazan Calendar",
     "icons": [
       {
@@ -11,5 +11,5 @@
         "type": "image/png"
       }
     ],
-    "theme_color": "#1E2124"
+    "theme_color": "#0E122A"
   }
